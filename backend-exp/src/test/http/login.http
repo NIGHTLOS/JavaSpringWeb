@@ -1,0 +1,27 @@
+###管理员错误密码
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "admin",
+  "password": "adminx"
+}
+
+###管理员初始密码
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "admin",
+  "password": "admin"
+}
+
+
+###用户
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "1001",
+  "password": "114514"
+}

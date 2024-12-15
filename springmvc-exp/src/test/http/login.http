@@ -1,0 +1,25 @@
+###FAILED
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "1001",
+  "password": "114514"
+}
+###SUCCESS_ADMIN
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "1001",
+  "password": "123456"
+}
+
+###SUCCESS_USER
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "2002",
+  "password": "123456"
+}

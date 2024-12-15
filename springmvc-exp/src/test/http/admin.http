@@ -1,0 +1,16 @@
+###全部
+GET http://localhost:8080/api/admin/users
+
+###单个账号
+GET http://localhost:8080/api/admin/users/1001
+
+###不存在的账号
+GET http://localhost:8080/api/admin/users/1002
+
+###无权限-使用用户TOKEN查用户
+GET http://localhost:8080/api/admin/users
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQURNNSIsInVpZCI6IjIiLCJpYXQiOjE3MzEzMjY2MTUsImV4cCI6MTczMTQxMzAxNX0.9-dNIuz-B8ofOyTTt79aNsVZKMomir91HelKHdusAa4
+
+###有权限-用管理员TOKEN查用户
+GET http://localhost:8080/api/admin/users
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQURNOSIsInVpZCI6IjEiLCJpYXQiOjE3MzEzMjY3NTcsImV4cCI6MTczMTQxMzE1N30.sTdkU2msDYZrapLhSSW5cWRFukIgLQhXzH2SVAQfitQ

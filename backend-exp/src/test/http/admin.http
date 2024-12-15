@@ -1,0 +1,15 @@
+POST localhost:8080/api/admin/users
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiNUNaWCIsInVpZCI6IjEzMDU4OTI2MDcyMzM1NjQ2NzIiLCJpYXQiOjE3MzE0MjA0NzYsImV4cCI6MTczMTUwNjg3Nn0.djp5_VgqwTFlFMFgjTjPhtzNqF0Ek_ae9YusenrBfBQ
+Content-Type: application/json
+
+{
+  "name": "ME",
+  "account": "1001",
+  "role": "TRA7"
+}
+
+###重置密码
+PUT localhost:8080/api/admin/users/1001/password
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiNUNaWCIsInVpZCI6IjEzMDU4OTI2MDcyMzM1NjQ2NzIiLCJpYXQiOjE3MzE0MjA0NzYsImV4cCI6MTczMTUwNjg3Nn0.djp5_VgqwTFlFMFgjTjPhtzNqF0Ek_ae9YusenrBfBQ
+Content-Type: application/json
+
